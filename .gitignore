@@ -1,0 +1,10 @@
+/.metadata/
+
+/GitHubLogin/.settings/
+/GitHubLogin/bin/
+
+/GitHubLogin/Lib/
+/GitHubLogin/test-output/
+/GitHubLogin/*.classpath
+/GitHubLogin/*.project
+
