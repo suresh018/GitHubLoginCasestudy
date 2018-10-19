@@ -73,9 +73,11 @@ public class LoginPage {
 				String errMsg=lblErrorMessage.getText();
 				throw new MyException("There were problems creating your account."+ errMsg);
 			}
+			//Bug: If email and password fromat is incorrecet but it is accepted by the system. We can handle it here.
+
 		}
 		catch(NoSuchElementException e){
-			//Verify account to create
+			//Verify the after valid data
 			if(!lblVerifyAccount.getText().contains("Verify account")){
 				throw new MyException("Error while verifying account.");
 			}
